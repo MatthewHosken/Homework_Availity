@@ -1,0 +1,166 @@
+.card-deck a.card {
+  text-decoration: none;
+}
+
+.card-deck .card:hover {
+  background-color: #113062 !important;
+  cursor: pointer;
+}
+
+.card-deck .card.selected {
+  background-color: #d3d3d3 !important;
+}
+
+ .card-deck .card.selected:hover {
+    color: #fff !important;
+  }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card {
+  flex: 1 0 0;
+  margin-bottom: 30px;
+  border-width: 1px;
+  border-color: #6c757d !important;
+}
+
+  .cards .card .card-title {
+    color: #19468d;
+  }
+
+.cards .card .card-header {
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+
+.form-group label {
+  margin-bottom: 0;
+}
+
+.form-group small {
+  margin-top: 0;
+}
+
+div.custom-control.custom-radio.custom-control-inline {
+  padding: 0 2.3rem;
+}
+
+.editing-form-control-nested-control label {
+  line-height: 1.5;
+  height: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline;
+}
+
+  .editing-form-control-nested-control label:before, .editing-form-control-nested-control label:after {
+    left: -2.5rem;
+    width: 2rem;
+    height: 2rem;
+    top: -0.4rem;
+  }
+
+.editing-form-control-nested-control input:not(:checked) ~ label:before, .editing-form-control-nested-control input:not(:checked) ~ label:after {
+  background-color: #e8e8e8;
+  left: -2.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  top: -0.4rem;
+}
+
+/*Form Validation*/
+.needs-validation .form-control.ng-invalid ~ .invalid-feedback {
+  display: block
+}
+
+.form-control.is-invalid {
+  border-width: 1px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d64220' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d64220' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
+}
+
+.dx-texteditor.dx-editor-outlined {
+  display: block;
+  width: 100%;
+  height: calc(2.5rem + 0);
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #19468d;
+  background-color: #e8e8e8;
+  background-clip: padding-box;
+  border: 0 solid #ced4da;
+  border-radius: 0;
+}
+
+#userToHaveAccess > div > div > input.dx-texteditor-input {
+  background-color: #e8e8e8;
+  color: #19468d;
+}
+
+::ng-deep .dx-tagbox .dx-texteditor-input {
+  background-color: #e8e8e8;
+  color: #19468d;
+}
+
+::ng-deep .dx-tag-content {
+  background-color: #19468d;
+  color: #fff;
+}
+
+.submit {
+  vertical-align: middle;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+/*.card-deck.quickentry .card {
+  flex: 1 0 20%;
+}
+
+.card h2 {
+  font-size: 1.4em;
+}*/
+
+.search-box {
+  margin: 40px auto;
+}
+
+.toolTipLarge {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 24px;
+  cursor: pointer;
+  white-space: pre-line;
+}
+
+.text-optional {
+  font-size: 12px;
+  padding-left: 12px;
+}
+
+::ng-deep .form-control-bg-light-gray .form-control::placeholder {
+  color: #bbb
+}
+
+.button-loader {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.button-loader-text {
+  display: inline-block;
+  line-height: normal;
+}
+
+.title {
+  color: red;
+  font: 12px tahoma;
+} 

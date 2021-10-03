@@ -1,0 +1,21 @@
+<h1>Registration Front Page</h1>
+
+
+<form [formGroup]="group" class="bg-white py-5 form form-font-weight-bold form-control-bg-light-gray needs-validation">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <div class="row">
+      <span class="text-red text-optional">
+        Please input your first name
+      </span>
+    </div>
+    <input type="text" class="form-control" id="firstName" name="firstName" formControlName="firstName" aria-describedby="firstName"
+           [ngClass]="{ 'is-invalid': (form.firstName.touched || form.firstName.dirty) && (form.firstName.errors?.required || form.firstName.errors?.maxlength || form.firstName.errors?.pattern) }" />
+    <small class="form-text text-muted">
+      Only letters, numbers, spaces, and dashes are allowed.
+    </small>
+    <div class="invalid-feedback" *ngIf="(form.firstName.touched || form.firstName.dirty) && form.firstName.errors?.required">This field is required</div>
+    <div class="invalid-feedback" *ngIf="(form.firstName.touched || form.firstName.dirty) && form.firstName.errors?.maxlength">Only 50 letters, numbers, and spaces are allowed.</div>
+    <div class="invalid-feedback" *ngIf="(form.firstName.touched || form.firstName.dirty) && form.firstName.errors?.pattern">Only letters, numbers, spaces, and dashes are allowed.</div>
+  </div>
+</form>
